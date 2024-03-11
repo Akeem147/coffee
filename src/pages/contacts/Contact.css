@@ -1,0 +1,16 @@
+.contacts {
+  background-image: url(../../assets/contactsImg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlayyy {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.527);
+  position: absolute;
+  padding: 130px 4rem;
+  top: 0;
+  left: 0;
+  right: 0;
+}

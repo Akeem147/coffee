@@ -1,0 +1,11 @@
+.menuu {
+  background-image: url(../../../../assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.782);
+  height: 100vh;
+}

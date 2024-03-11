@@ -1,0 +1,14 @@
+.grid {
+  column-gap: 25px;
+  row-gap: 30px;
+}
+
+.menu {
+  background-color: rgba(48, 48, 48, 0.9);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.menu:hover {
+  opacity: 1;
+}

@@ -1,0 +1,28 @@
+.offer {
+  background-image: url(../../../assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlayy {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.782);
+}
+
+.swiper-pagination {
+  position: initial;
+  margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border: 3px solid white;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b08968;
+}
