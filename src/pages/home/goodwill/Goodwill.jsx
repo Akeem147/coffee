@@ -11,7 +11,7 @@ import "../goodwill/Goodwill.css";
 
 const Goodwill = () => {
   return (
-    <div className="w-full xl:h-screen h-[50vh] sm:h-[55vh] text-white xl:px-[4rem] pt-[70px]">
+    <div className="w-full xl:h-auto h-auto sm:h-[55vh] text-white xl:px-[4rem] pt-[30px] mb-5 xl:mb-6">
       <h1 className="text-3xl text-center mb-8">What Client Say's</h1>
 
       <Swiper
@@ -21,7 +21,7 @@ const Goodwill = () => {
         modules={[Pagination]}
         className=""
       >
-        <SwiperSlide className="flex items-center ml-[70px] xl:ml-0 sm:ml-[170px]">
+        <SwiperSlide className="flex items-center ml-[70px] min-[320px]:ml-[15px] min-[375px]:ml-[45px] min-[414px]:ml-[65px] min-[360px]:ml-[40px] xl:ml-0 sm:ml-[170px]">
           <div>
             <div className="w-[290px] h-[150px] bg-[rgb(11,11,11)] p-3 rounded-md text-center">
               <p>

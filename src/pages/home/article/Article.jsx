@@ -12,7 +12,7 @@ const Article = () => {
           <h2 className="text-[#b08968] text-xl font-semibold mb-3">
             Why Choose Us
           </h2>
-          <h1 className="xl:w-[520px] w-[350px] xl:text-4xl text-2xl mb-5">
+          <h1 className="xl:w-[520px] w-[350px] min-[320px]:w-[300px] min-[375px]:w-[320px] min-[425px]:w-[350px] xl:text-4xl text-2xl mb-5">
             Coffero Most Out Of Your Favorite & Tasty Coffee House
           </h1>
           <p className="xl:w-[480px]">

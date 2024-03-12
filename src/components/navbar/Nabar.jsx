@@ -11,7 +11,7 @@ const Nabar = () => {
   const [showNav, setShowNav] = useState(false);
   const { cartItems } = useContext(CartContext);
   return (
-    <div className="w-full h-[60px] bg-[#191919] mx-auto z-10 text-white flex items-center justify-between px-8 xl:px-[60px]">
+    <div className="w-full h-[60px] bg-[#191919] mx-auto z-10 text-white flex items-center justify-between px-8 min-[320px]:px-5 min-[320px]:pt-3 xl:px-[60px]">
       <div className="z-10">
         <Link to={"/"}>
           <img className="w-[100px]" src={logo} alt="" />
@@ -20,7 +20,7 @@ const Nabar = () => {
 
       <div className="absolute xl:static z-10 top-[80px] left-0 right-0 text-black xl:text-white text-center">
         {showNav && (
-          <ul className="flex flex-col xl:flex-row gap-5 ">
+          <ul className="flex flex-col xl:flex-row gap-5 bg-gray-400">
             <NavLink to={"/"}>Home</NavLink>
 
             <NavLink to={"/about"}>About</NavLink>

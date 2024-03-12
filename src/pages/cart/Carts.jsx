@@ -26,7 +26,7 @@ const Carts = () => {
               </h4>
               <p>{item.description}</p>
             </div>
-            <div className="flex mr-[75%] sm:mr-[83%] mb-2 xl:mr-0 items-center gap-[10px]">
+            <div className="flex mr-[75%] min-[320px]:ml-6 sm:mr-[83%] mb-2 xl:mr-0 items-center gap-[10px]">
               <button
                 className="text-black bg-gray-500 text-[25px] px-[10px] font-medium"
                 onClick={() => addToCart(item)}

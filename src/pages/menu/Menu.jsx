@@ -17,8 +17,8 @@ const Menu = () => {
               src={menu.image}
               alt=""
             />
-            <div className="menu absolute top-0 right-0 left-0 xl:w-[270px] w-full xl:h-[270px] h-full p-[15px] text-center">
-              <h3 className="text-[30px] mb-[10px] text-[#b08968] font-semibold">
+            <div className="menu absolute min-[320px]:h-[260px] min-[375px]:h-[315px] min-[414px]:h-[350px] min-[360px]:h-[300px] min-[390px]:h-[330px] min-[428px]:h-[365px]  top-0 right-0 left-0 xl:w-[270px] w-full xl:h-[270px] p-[15px] text-center">
+              <h3 className="text-[30px] min-[320px]:text-[20px] mb-[10px] text-[#b08968] font-semibold">
                 {menu.name}
               </h3>
               <p>

@@ -24,7 +24,7 @@ const SingleProduct = () => {
         <h3 className="text-white font-semibold mb-[15px] text-xl">
           Coffee Details:
         </h3>
-        <p className="text-white xl:w-[600px] w-[380px] sm:w-[500px] xl:leading-6 leading-7">
+        <p className="text-white xl:w-[600px] min-[320px]:w-[260px] min-[375px]:w-[300px] w-[380px] sm:w-[500px] xl:leading-6 leading-7">
           A cappuccino is an Italian coffee drink that is traditionally prepared
           with equal parts double espresso, steamed milk, and steamed milk foam
           on top. Cream may be used instead of milk. It is typically smaller in
@@ -44,7 +44,7 @@ const SingleProduct = () => {
         <div className="text-white flex gap-3">
           <button
             onClick={() => addToCart(product)}
-            className="border border-[#b08968] px-3 py-1 rounded-md text-[#b08968]"
+            className="border border-[#b08968] px-3 py-1 min-[320px]:text-[12px] rounded-md text-[#b08968]"
           >
             Buy now
           </button>

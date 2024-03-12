@@ -7,7 +7,7 @@ import ExpertsProps from "../expertsProps/ExpertsProps";
 
 const ExpertsComp = () => {
   return (
-    <div className="w-full xl:h-screen h-auto text-white xl:px-[4rem] px-[2rem] pt-[50px] mb-6">
+    <div className="w-full xl:h-screen h-auto text-white xl:px-[4rem] px-[2rem] pt-[30px] mb-6">
       <h1 className="text-center text-4xl mb-[40px]">Meet our experts</h1>
 
       <div className="grid xl:grid-cols-4 grid-cols-1 xl:gap-2 gap-6">

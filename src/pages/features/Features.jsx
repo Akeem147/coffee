@@ -10,7 +10,7 @@ const Features = () => {
         <h1 className="xl:text-3xl text-4xl text-[#b08968]">Our Features</h1>
       </div>
 
-      <div className="grid xl:grid-cols-3 grid-cols-1 gap-4 pt-[50px] xl:ml-[50px]">
+      <div className="grid xl:grid-cols-3 grid-cols-1 gap-4 min-[320px]:pt-3 xl:pt-[50px] xl:ml-[50px]">
         <div className="xl:w-[300px] w-full p-[20px] h-auto bg-[rgb(43,43,43)] rounded-md">
           <img className="w-[80px] mb-3" src={delivery} alt="" />
           <h1 className="text-3xl mb-3">Free Delivery</h1>

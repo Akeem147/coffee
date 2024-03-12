@@ -4,15 +4,15 @@ import shape2 from "../../../assets/shape-3.png";
 
 const Reservation = () => {
   return (
-    <div className="relative bg-[rgb(11,11,11)] text-white xl:w-[80%] mx-auto h-[85vh] mb-8 xl:px-[6rem] px-[1.5rem] rounded-md">
+    <div className="relative bg-[rgb(11,11,11)] text-white xl:w-[80%] mx-auto h-auto mb-8 xl:px-[6rem] px-[1.5rem] rounded-md pb-6">
       <div>
         <img
-          className="w-[150px] absolute right-[60px] top=6 z-10"
+          className="w-[150px] absolute right-[60px] top-6 min-[320px]:right-0 min-[320px]:top-0 z-10"
           src={shape1}
           alt=""
         />
         <img
-          className="w-[150px] absolute left-[60px] bottom-6 z-10"
+          className="w-[150px] absolute left-[60px] bottom-6 z-10 min-[320px]:bottom-0 min-[320px]:left-0"
           src={shape2}
           alt=""
         />
@@ -63,7 +63,7 @@ const Reservation = () => {
         ></textarea>
       </div>
 
-      <button className="bg-[#b08968] text-white xl:py-1 xl:px-2 py-2 px-3 xl:ml-[45%] ml-[35%] sm:ml-[42%] mt-5 rounded-md">
+      <button className="bg-[#b08968] text-white xl:py-1 xl:px-2 py-2 px-3 xl:ml-[45%] ml-[35%] min-[375px]:ml-[35%] min-[320px]:ml-[31%] sm:ml-[42%] mt-5 rounded-md">
         Book A Table
       </button>
     </div>

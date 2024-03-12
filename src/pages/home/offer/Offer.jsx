@@ -9,8 +9,8 @@ import "../offer/Offer.css";
 
 const Offer = () => {
   return (
-    <div className="offer w-full xl:h-screen h-[70vh] sm:h-[80vh] bg-[#191919] text-white ">
-      <div className="overlayy xl:px-[4rem] xl:h-screen sm:h-[80vh] h-[70vh] px-[2rem] pt-[60px]">
+    <div className="offer w-full xl:h-screen h-auto sm:h-[80vh] bg-[#191919] text-white">
+      <div className="overlayy xl:px-[4rem] xl:h-screen sm:h-[80vh] h-auto px-[2rem] pt-[60px]">
         <h1 className="text-center text-3xl mb-6 text-[#b08968]">
           Special Offer For You
         </h1>
@@ -30,8 +30,8 @@ const Offer = () => {
               />
             </div>
 
-            <div className="xl:w-[320px] w-full h-[255px] bg-[#191919] p-2 rounded-md xl:absolute right-[250px] top-[60px]">
-              <div className="xl:w-[305px] w-full h-[238px] rounded-md p-[10px] border-2 border-dashed border-gray-100">
+            <div className="xl:w-[320px] w-full h-[255px] min-[320px]:h-[275px] bg-[#191919] p-2 rounded-md xl:absolute right-[250px] top-[60px]">
+              <div className="xl:w-[305px] w-full h-[238px] min-[320px]:h-[260px] rounded-md p-[10px] border-2 border-dashed border-gray-100">
                 <h3 className="xl:text-2xl font-semibold mb-3">
                   Cappucinno Arabica
                 </h3>
@@ -56,8 +56,8 @@ const Offer = () => {
               />
             </div>
 
-            <div className="xl:w-[320px] w-full h-[255px] bg-[#191919] p-2 rounded-md xl:absolute right-[250px] top-[60px]">
-              <div className="xl:w-[305px] w-full h-[238px] rounded-md p-[10px] border-2 border-dashed border-gray-100">
+            <div className="xl:w-[320px] min-[320px]:h-[275px] w-full h-[255px] bg-[#191919] p-2 rounded-md xl:absolute right-[250px] top-[60px]">
+              <div className="xl:w-[305px] w-full h-[238px] min-[320px]:h-[260px] rounded-md p-[10px] border-2 border-dashed border-gray-100">
                 <h3 className="xl:text-2xl font-semibold mb-3">
                   Cappucinno Arabica
                 </h3>
