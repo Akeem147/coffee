@@ -5,7 +5,7 @@ import coffee from "../../assets/coffee-beans.svg";
 
 const Features = () => {
   return (
-    <div className="w-full xl:h-screen h-auto mb-[30px] text-white xl:px-[4rem] px-[2rem] pt-[50px]">
+    <div className="w-full xl:h-screen h-auto mb-[30px] text-white xl:px-[4rem] px-[2rem] pt-[100px]">
       <div className="text-center">
         <h1 className="xl:text-3xl text-4xl text-[#b08968]">Our Features</h1>
       </div>

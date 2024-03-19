@@ -1,4 +1,5 @@
 import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Nabar";
 import HomeIndex from "./pages/home/HomeIndex";
@@ -12,11 +13,13 @@ import Testimonials from "./pages/testimonials/Testimonials";
 import Products from "./pages/products/Products";
 import SingleProduct from "./pages/products/SingleProduct";
 import Carts from "./pages/cart/Carts";
+import { ToastContainer, toast } from "react-toastify";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+      <ToastContainer/>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomeIndex />} />

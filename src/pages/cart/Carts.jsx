@@ -1,14 +1,14 @@
 import React from "react";
 import { useContext } from "react";
 import { CartContext } from "../../components/context/CartContext";
-import { MdDelete } from "react-icons/md";
+// import { MdDelete } from "react-icons/md";
 
 const Carts = () => {
   const { cartItems, addToCart, removeFromCart, clearCart, getTotal } =
     useContext(CartContext);
-  console.log(cartItems);
+
   return (
-    <div className="w-full h-auto text-white xl:px-[4rem] px-[2rem] pt-[50px] mb-[30px]">
+    <div className="w-full h-auto text-white xl:px-[4rem] px-[2rem] pt-[100px] mb-[30px]">
       <div className="relative">
         {cartItems.map((item) => (
           <div
@@ -51,7 +51,7 @@ const Carts = () => {
             className="bg-[#b08968] text-white px-3 py-1 font-semibold mt-2 rounded-md"
             onClick={() => clearCart()}
           >
-            Clear cart{" "}
+            Clear cart
           </button>
         </div>
       ) : (

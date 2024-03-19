@@ -7,7 +7,7 @@ import "../testimonials/Testimonials.css";
 
 const Testimonials = () => {
   return (
-    <div className="w-full xl:h-screen h-auto mb-8 text-white xl:px-[4rem] px-[2rem] pt-[50px]">
+    <div className="w-full xl:h-screen h-auto mb-8 text-white xl:px-[4rem] px-[2rem] pt-[100px]">
       <h1 className="text-center text-3xl font-semibold text-[#b08968]">
         Testimonials
       </h1>

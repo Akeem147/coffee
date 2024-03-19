@@ -10,9 +10,12 @@ const SingleProduct = () => {
   const product = Data.find((p) => p.id === parseInt(productsId));
   const { image, name, price } = product;
   const { addToCart } = useContext(CartContext);
+  const Notify = () => {
+    toast("success");
+  };
 
   return (
-    <div className="w-full h-auto xl:px-[4rem] px-[2rem] pt-[50px] flex flex-col xl:flex-row gap-8 pb-[30px]">
+    <div className="w-full h-auto xl:px-[4rem] px-[2rem] pt-[100px] flex flex-col xl:flex-row gap-8 pb-[30px]">
       <div>
         <img className="xl:w-[430px] w-full rounded-md" src={image} alt="" />
       </div>

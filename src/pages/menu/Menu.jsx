@@ -4,7 +4,7 @@ import { MenuData } from "../../components/menuDb/MenuData";
 
 const Menu = () => {
   return (
-    <div className="w-full h-auto text-white xl:px-[4rem] px-[2rem] pt-[50px]">
+    <div className="w-full h-auto text-white xl:px-[4rem] px-[2rem] pt-[100px]">
       <h1 className="text-center text-3xl text-[#b08968] mb-7 font-semibold">
         Our Menu
       </h1>

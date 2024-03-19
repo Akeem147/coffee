@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className="m-0-auto w-full xl:h-screen h-auto min-[425px]:mt-[110%] min-[375px]:mt-[120%] min-[320px]:mt-[175%] sm:mt-[70%] xl:mt-[42%] pt-[70px] xl:px-[4rem] px-6 sm:px-10 bg-[#191919] flex gap-8 flex-col xl:flex-row">
       <div className="w-[375px] sm:w-[560px] xl:w-[470px] min-[320px]:w-full min-[375px]:w-full min-[425px]:w-full h-[330px] min-[320px]:h-[315px] sm:h-[490px] xl:h-[412px] bg-[#b08968] py-3 px-3 rounded-md">
         <img
-          className="w-[350px] sm:w-[540px] xl:w-[450px] min-[320px]:w-full min-[375px]:w-full min-[425px]:w-full min-[320px]:h-[290px] rounded-sm"
+          className="w-[350px] sm:w-[540px] xl:w-[450px] min-[320px]:w-full min-[375px]:w-full min-[425px]:w-full min-[320px]:h-[290px] rounded-sm xl:h-[388px]"
           src={about}
           alt=""
         />

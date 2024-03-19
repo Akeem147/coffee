@@ -3,7 +3,7 @@ import coffeHouse from "../../assets/cofhouse.jpeg";
 
 const About = () => {
   return (
-    <div className="w-full h-auto mb-[30px] px-[2rem] xl:px-[4rem] pt-[50px]  text-white">
+    <div className="w-full h-auto mb-[30px] px-[2rem] xl:px-[4rem] pt-[100px]  text-white">
       <div className="text-center xl:mb-[60px] mb-[20px]">
         <h1 className="text-[40px] text-[#b08968] ">About Us</h1>
         <p className="w-[350px] mx-auto text-[#b08968] min-[320px]:w-[250px] min-[375px]:w-[300px]">

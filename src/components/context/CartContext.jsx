@@ -1,5 +1,6 @@
 import React from "react";
-import { createContext, useState} from "react";
+import { createContext, useState } from "react";
+import { toast } from "react-toastify";
 
 export const CartContext = createContext();
 
@@ -14,7 +15,8 @@ const CartProvider = ({ children }) => {
         cartItems.map((cartItem) =>
           cartItem.id === item.id
             ? { ...cartItem, quantity: cartItem.quantity + 1 }
-            : cartItem
+            : cartItem,
+            toast.success('One item added to cart')
         )
       );
     } else {
@@ -49,7 +51,9 @@ const CartProvider = ({ children }) => {
   };
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, clearCart, getTotal}}>
+    <CartContext.Provider
+      value={{ cartItems, addToCart, removeFromCart, clearCart, getTotal }}
+    >
       {children}
     </CartContext.Provider>
   );
