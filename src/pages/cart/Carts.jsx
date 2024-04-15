@@ -1,11 +1,15 @@
 import React from "react";
 import { useContext } from "react";
 import { CartContext } from "../../components/context/CartContext";
-// import { MdDelete } from "react-icons/md";
+import { Link } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
 const Carts = () => {
   const { cartItems, addToCart, removeFromCart, clearCart, getTotal } =
     useContext(CartContext);
+    const handleScroll = () => {
+      scroll.scrollToTop();
+    };
 
   return (
     <div className="w-full h-auto text-white xl:px-[4rem] px-[2rem] pt-[100px] mb-[30px]">
@@ -47,15 +51,27 @@ const Carts = () => {
       {cartItems.length > 0 ? (
         <div className="text-center">
           <h1 className="text-2xl font-semibold">Total: ${getTotal()}</h1>
-          <button
+        <div  onClick={() => clearCart()}>
+        <button onClick={handleScroll}
             className="bg-[#b08968] text-white px-3 py-1 font-semibold mt-2 rounded-md"
-            onClick={() => clearCart()}
+           
           >
             Clear cart
           </button>
         </div>
+        </div>
       ) : (
-        <h4 className="text-center text-2xl mb-6">Your cart is empty</h4>
+        <div className="text-center">
+          <h4 className="text-2xl mb-6">Your cart is empty</h4>
+          <Link to={"/products"}>
+            <button
+              onClick={handleScroll}
+              className="bg-[#b08968] text-white text-[12px] px-3 py-1 font-semibold mt-2 rounded-md"
+            >
+              Go back to products
+            </button>
+          </Link>
+        </div>
       )}
     </div>
   );

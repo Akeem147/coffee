@@ -19,7 +19,29 @@ const Goodwill = () => {
         slidesPerView={3}
         pagination={{ clickable: true }}
         modules={[Pagination]}
-        className=""
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          375: {
+            slidesPerView: 1,
+          },
+          360: {
+            slidesPerView: 1,
+          },
+          390: {
+            slidesPerView: 1,
+          },
+          414: {
+            slidesPerView: 1,
+          },
+          428: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
       >
         <SwiperSlide className="flex items-center ml-[70px] min-[320px]:ml-[15px] min-[375px]:ml-[45px] min-[414px]:ml-[65px] min-[360px]:ml-[40px] xl:ml-0 sm:ml-[170px]">
           <div>
@@ -31,7 +53,7 @@ const Goodwill = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center gap-[10px] mt-[30px]">
+            <div className="flex items-center xl:justify-center gap-[10px] mt-[30px]">
               <div>
                 <img
                   className="w-[80px] h-[80px] rounded-full"
@@ -54,8 +76,8 @@ const Goodwill = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex items-center">
-          <div className="hidden xl:block">
-            <div className="xl:w-[290px] w-[400px] h-[150px] bg-[rgb(11,11,11)] p-3 rounded-md text-center">
+          <div>
+            <div className="w-[290px] h-[150px] bg-[rgb(11,11,11)] p-3 rounded-md text-center">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
                 animi quia molestias ex inventore pariatur placeat numquam, illo
@@ -86,7 +108,7 @@ const Goodwill = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="hidden xl:block">
+        <SwiperSlide>
           <div>
             <div className="w-[290px] h-[150px] bg-[rgb(11,11,11)] p-3 rounded-md text-center">
               <p>
@@ -96,7 +118,7 @@ const Goodwill = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center gap-[10px] mt-[30px]">
+            <div className="flex items-center xl:justify-center gap-[10px] mt-[30px]">
               <div>
                 <img
                   className="w-[80px] h-[80px] rounded-full"
@@ -119,7 +141,7 @@ const Goodwill = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="container-2 hidden xl:block">
+        <SwiperSlide className="container-2 ">
           <div>
             <div className="w-[290px] h-[150px] bg-[rgb(11,11,11)] p-3 rounded-md text-center">
               <p>
@@ -129,7 +151,7 @@ const Goodwill = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center gap-[10px] mt-[30px]">
+            <div className="flex items-center xl:justify-center gap-[10px] mt-[30px]">
               <div>
                 <img
                   className="w-[80px] h-[80px] rounded-full"

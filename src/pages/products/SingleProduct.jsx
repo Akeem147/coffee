@@ -4,6 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import { Data } from "../../components/productsDb/Data";
 import { CartContext } from "../../components/context/CartContext";
 import { useContext } from "react";
+import { animateScroll as scroll } from "react-scroll";
 
 const SingleProduct = () => {
   const { productsId } = useParams();
@@ -12,6 +13,10 @@ const SingleProduct = () => {
   const { addToCart } = useContext(CartContext);
   const Notify = () => {
     toast("success");
+  };
+
+  const handleScroll = () => {
+    scroll.scrollToTop();
   };
 
   return (
@@ -52,7 +57,7 @@ const SingleProduct = () => {
             Buy now
           </button>
           <Link to="/products">
-            <button className="bg-[#b08968] text-white py-1 px-3 rounded-md">
+            <button onClick={handleScroll} className="bg-[#b08968] text-white py-1 px-3 rounded-md">
               Go back to products
             </button>
           </Link>

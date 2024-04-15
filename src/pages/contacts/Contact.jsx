@@ -50,6 +50,7 @@ const Contact = () => {
                 <input
                   className="my-[8px] focus:outline-none border-b-2"
                   type="text"
+                  required
                 />
               </div>
 
@@ -58,6 +59,7 @@ const Contact = () => {
                 <input
                   className="my-[8px] focus:outline-none border-b-2"
                   type="email"
+                  required
                 />
               </div>
 
@@ -66,6 +68,7 @@ const Contact = () => {
                 <input
                   className="my-[8px] focus:outline-none border-b-2"
                   type="text"
+                  required
                 />
               </div>
               <button className="bg-[#b08968] text-white py-1 px-2 rounded-md mt-2">

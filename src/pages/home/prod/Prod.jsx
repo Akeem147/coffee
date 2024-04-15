@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Data } from "../../../components/productsDb/Data";
+import { animateScroll as scroll } from "react-scroll";
 
 const Prod = () => {
+  const handleScroll = () => {
+    scroll.scrollToTop();
+  };
   return (
     <div className="w-full h-auto bg-[rgb(11,11,11)] text-white pt-[30px] px-[2rem] xl:px-[4rem] pb-8">
       <div className="text-center">
@@ -27,7 +31,7 @@ const Prod = () => {
               </h3>
 
               <Link to={'/products'}>
-                <button className=" px-2 py-1 xl:py-1 sm:py-2 sm:px-3 xl:px-2 mt-2 bg-[#b08968] text-white rounded-md">
+                <button onClick={handleScroll} className=" px-2 py-1 xl:py-1 sm:py-2 sm:px-3 xl:px-2 mt-2 bg-[#b08968] text-white rounded-md">
                   Go to products
                 </button>
               </Link>

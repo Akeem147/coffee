@@ -15,12 +15,11 @@ const CartProvider = ({ children }) => {
         cartItems.map((cartItem) =>
           cartItem.id === item.id
             ? { ...cartItem, quantity: cartItem.quantity + 1 }
-            : cartItem,
-            toast.success('One item added to cart')
+            : cartItem
         )
       );
     } else {
-      setCartItems([...cartItems, { ...item, quantity: 1 }]);
+      setCartItems([...cartItems, { ...item, quantity: 1 }]),toast.success('One item added to cart');
     }
   };
 
