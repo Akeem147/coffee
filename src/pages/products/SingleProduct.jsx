@@ -22,9 +22,9 @@ const SingleProduct = () => {
   return (
     <div className="w-full h-auto xl:px-[4rem] px-[2rem] pt-[100px] flex flex-col xl:flex-row gap-8 pb-[30px]">
       <div>
-        <img className="xl:w-[430px] w-full rounded-md" src={image} alt="" />
+        <img className="xl:w-[430px] xl:h-[350px] h-[270px] w-full rounded-md" src={image} alt="" />
       </div>
-      <div className="pt-[30px]">
+      <div className="pt-[8px]">
         <h1 className="text-[#b08968] text-3xl font-semibold mb-[20px]">
           {name}
         </h1>

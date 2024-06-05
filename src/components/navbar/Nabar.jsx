@@ -7,8 +7,52 @@ import { useState, useEffect, useRef } from "react";
 import { CartContext } from "../context/CartContext";
 import { useContext } from "react";
 import { animateScroll as scroll } from "react-scroll";
+import { useLocation } from "react-router-dom";
+
+const navLinks = [
+  {
+    name: "Home",
+    path: "/",
+  },
+
+  {
+    name: "About",
+    path: "/about",
+  },
+
+  {
+    name: "Products",
+    path: "/products",
+  },
+
+  {
+    name: "Features",
+    path: "/features",
+  },
+
+  {
+    name: "Menu",
+    path: "/menu",
+  },
+
+  {
+    name: "Chefs",
+    path: "/chefs",
+  },
+
+  {
+    name: "Testimonials",
+    path: "/testimonials",
+  },
+
+  {
+    name: "Contacts",
+    path: "/contacts",
+  },
+];
 
 const Nabar = () => {
+  const location = useLocation();
   const [showNav, setShowNav] = useState(false);
   const { cartItems } = useContext(CartContext);
   let menuRef = useRef();
@@ -30,7 +74,7 @@ const Nabar = () => {
   });
 
   return (
-    <div className="w-full h-[60px] bg-[#191919] mx-auto z-10 text-white flex items-center justify-between px-8 min-[320px]:px-5 min-[320px]:pt-3 xl:px-[60px] fixed top-0 left-0 right-0">
+    <div className="w-full h-[80px] bg-[#191919] mx-auto z-10 text-white flex items-center justify-between px-8 min-[320px]:px-5 min-[320px]:pt-3 xl:px-[60px] fixed top-0 left-0 right-0">
       <div className="z-10">
         <Link onClick={handleScroll} to={"/"}>
           <img className="w-[100px]" src={logo} alt="" />
@@ -42,46 +86,40 @@ const Nabar = () => {
         className="absolute xl:static z-10 top-[80px] left-0 right-0 text-black font-semibold xl:text-white text-center"
       >
         {showNav && (
-          <ul className="flex flex-col xl:flex-row gap-5 bg-gray-400 py-5">
-            <NavLink onClick={handleScroll} to={"/"}>
-              Home
-            </NavLink>
-
-            <NavLink onClick={handleScroll} to={"/about"}>About</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/products"}>Products</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/features"}>Features</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/menu"}>Menu</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/chefs"}>Chefs</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/testimonials"}>Testimonials</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/contacts"}>Contact us</NavLink>
-          </ul>
+                <ul className="flex flex-col xl:flex-row gap-5 bg-[#191919] text-white py-5">
+                {navLinks.map(({ name, path }) => (
+                  <NavLink to={path} onClick={handleScroll}
+                    key={name}
+                    href={path}
+                    className={`${
+                      location.pathname === path
+                        ? "text-[#b08968] font-semibold"
+                        : "text-[#fff]"
+                    }`}
+                  >
+                    {name}
+                  </NavLink>
+                ))}
+              </ul>
         )}
+
         <div className="hidden xl:block">
-          <ul className="flex flex-col xl:flex-row gap-5">
-            <NavLink onClick={handleScroll} to={"/"}>
-              Home
-            </NavLink>
+        <ul className="md:flex items-center gap-6 hidden ">
+        {navLinks.map(({ name, path }) => (
+          <NavLink to={path} onClick={handleScroll}
+            key={name}
+            href={path}
+            className={`${
+              location.pathname === path
+                ? "text-[#b08968] font-semibold relative after:content after:block after:w-full after:h-[2px] after:bg-[#b08968]"
+                : "text-[#fff]"
+            }`}
+          >
+            {name}
+          </NavLink>
+        ))}
+      </ul>
 
-            <NavLink onClick={handleScroll} to={"/about"}>About</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/products"}>Products</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/features"}>Features</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/menu"}>Menu</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/chefs"}>Chefs</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/testimonials"}>Testimonials</NavLink>
-
-            <NavLink onClick={handleScroll} to={"/contacts"}>Contact us</NavLink>
-          </ul>
         </div>
       </div>
       <div className="flex items-center gap-5 z-10 relative">

@@ -7,9 +7,9 @@ import { animateScroll as scroll } from "react-scroll";
 const Carts = () => {
   const { cartItems, addToCart, removeFromCart, clearCart, getTotal } =
     useContext(CartContext);
-    const handleScroll = () => {
-      scroll.scrollToTop();
-    };
+  const handleScroll = () => {
+    scroll.scrollToTop();
+  };
 
   return (
     <div className="w-full h-auto text-white xl:px-[4rem] px-[2rem] pt-[100px] mb-[30px]">
@@ -20,7 +20,7 @@ const Carts = () => {
             key={item.id}
           >
             <img
-              className="xl:w-[200px] w-full rounded-md"
+              className="xl:w-[200px] h-[270px] xl:h-[200px] w-full rounded-md"
               src={item.image}
               alt=""
             />
@@ -51,14 +51,14 @@ const Carts = () => {
       {cartItems.length > 0 ? (
         <div className="text-center">
           <h1 className="text-2xl font-semibold">Total: ${getTotal()}</h1>
-        <div  onClick={() => clearCart()}>
-        <button onClick={handleScroll}
-            className="bg-[#b08968] text-white px-3 py-1 font-semibold mt-2 rounded-md"
-           
-          >
-            Clear cart
-          </button>
-        </div>
+          <div onClick={() => clearCart()}>
+            <button
+              onClick={handleScroll}
+              className="bg-[#b08968] text-white px-3 py-1 font-semibold mt-2 rounded-md"
+            >
+              Clear cart
+            </button>
+          </div>
         </div>
       ) : (
         <div className="text-center">

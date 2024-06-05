@@ -19,7 +19,7 @@ const Prod = () => {
           <div key={product.id}>
             <div>
               <img
-                className="xl:w-[300px] w-full rounded-md"
+                className="xl:w-full xl:h-[300px] h-[270px] w-full rounded-md"
                 src={product.image}
                 alt=""
               />

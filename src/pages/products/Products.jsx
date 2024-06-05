@@ -16,7 +16,7 @@ const Products = () => {
         {Data.map((product) => (
           <div key={product.id}>
             <img
-              className="xl:w-[350px] w-full h-fit rounded-sm"
+              className="xl:w-full xl:h-[300px] h-[270px] xl:rounded-md w-full rounded-md"
               src={product.image}
               alt=""
             />

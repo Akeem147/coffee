@@ -4,15 +4,15 @@ import about from "../../../assets/about.jpg";
 
 const AboutUs = () => {
   return (
-    <div className="m-0-auto w-full xl:h-screen h-auto min-[425px]:mt-[110%] min-[375px]:mt-[120%] min-[320px]:mt-[175%] sm:mt-[70%] xl:mt-[42%] pt-[70px] xl:px-[4rem] px-6 sm:px-10 bg-[#191919] flex gap-8 flex-col xl:flex-row">
-      <div className="w-[375px] sm:w-[560px] xl:w-[470px] min-[320px]:w-full min-[375px]:w-full min-[425px]:w-full h-[330px] min-[320px]:h-[315px] sm:h-[490px] xl:h-[412px] bg-[#b08968] py-3 px-3 rounded-md">
+    <div className="m-0-auto w-full xl:h-auto h-auto min-[414px]:mt-[125%] xl:mt-[45%] xl:mb-10  min-[375px]:mt-[135%] min-[360px]:mt-[170%]  min-[320px]:mt-[178%]  pt-[70px] xl:px-[4rem] px-6 sm:px-10 bg-[#191919] flex gap-8 flex-col xl:flex-row">
+      <div className="w-[375px] sm:w-[560px] xl:w-[470px] min-[320px]:w-full min-[375px]:w-full min-[425px]:w-full h-[330px] min-[320px]:h-[315px] sm:h-[490px] xl:h-[412px] bg-[#b08968] py-3 px-3 rounded-md  min-[320px]:mt-10 min-[360px]:mt-0">
         <img
           className="w-[350px] sm:w-[540px] xl:w-[450px] min-[320px]:w-full min-[375px]:w-full min-[425px]:w-full min-[320px]:h-[290px] rounded-sm xl:h-[388px]"
           src={about}
           alt=""
         />
       </div>
-      <div className="text-white pt-[40px]">
+      <div className="text-white pt-[40px] min-[320px]:pt-[10px]">
         <h4 className="text-[#b08968] text-2xl mb-3">About us</h4>
         <h1 className="text-3xl xl:text-4xl sm:text-4xl mb-3 w-[350px] min-[320px]:w-[275px] min-[375px]:w-[300px] min-[375px]:text-3xl min-[320px]:text-2xl sm:w-[500px] xl:w-[500px]">
           Fresh Quality And Organic Tasty Coffee House For You

@@ -1,5 +1,6 @@
 import React from "react";
 import "../hero/Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,9 +17,11 @@ const Hero = () => {
         </p>
       </div>
       <div className="xl:ml-[60px] ml-[40px] mt-[30px] min-[320px]:ml-6 flex items-start gap-3">
-        <button className="bg-[#b08968] text-white py-2 px-2 rounded-md">
-          Check menu
-        </button>
+        <Link to={'/menu'}>
+          <button className="bg-[#b08968] text-white py-2 px-2 rounded-md">
+            Check menu
+          </button>
+        </Link>
         <button className="border border-[#b08968] text-white p-2 rounded-md ">
           Book table
         </button>
