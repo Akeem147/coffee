@@ -1,18 +1,25 @@
 import React from "react";
 import { useContext } from "react";
 import { CartContext } from "../../components/context/CartContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 
 const Carts = () => {
+  const navigate = useNavigate()
   const { cartItems, addToCart, removeFromCart, clearCart, getTotal } =
     useContext(CartContext);
   const handleScroll = () => {
     scroll.scrollToTop();
   };
 
+
+  const savedCart = JSON.parse(localStorage.getItem("cartItems"));
+console.log("Saved Cart from localStorage:", savedCart); // Check saved cart
+
+
+
   return (
-    <div className="w-full h-auto text-white xl:px-[4rem] px-[2rem] pt-[100px] mb-[30px]">
+    <div className="w-full h-screen text-white xl:px-[4rem] px-[2rem] pt-[100px] mb-[30px]">
       <div className="relative">
         {cartItems.map((item) => (
           <div
@@ -51,14 +58,17 @@ const Carts = () => {
       {cartItems.length > 0 ? (
         <div className="text-center">
           <h1 className="text-2xl font-semibold">Total: ${getTotal()}</h1>
-          <div onClick={() => clearCart()}>
+          <div className="flex items-center gap-4 my-10 justify-center" onClick={() => clearCart()}>
             <button
               onClick={handleScroll}
-              className="bg-[#b08968] text-white px-3 py-1 font-semibold mt-2 rounded-md"
+              className="bg-[#b08968] text-white px-4 py-2 font-medium rounded-md"
             >
               Clear cart
             </button>
+
+            <button onClick={() => navigate("/checkout")} className="bg-transparent border border-[#b08968] px-4 py-2 font-medium rounded-md">Proceed to checkout</button>
           </div>
+          
         </div>
       ) : (
         <div className="text-center">

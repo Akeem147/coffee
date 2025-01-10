@@ -13,9 +13,14 @@ import Testimonials from "./pages/testimonials/Testimonials";
 import Products from "./pages/products/Products";
 import SingleProduct from "./pages/products/SingleProduct";
 import Carts from "./pages/cart/Carts";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import Checkout from "./pages/checkout/Checkout";
+import { useContext } from "react";
+import { CartContext } from "./components/context/CartContext";
 
 function App() {
+   const { cartItems} = useContext(CartContext);
   return (
     <div>
       <BrowserRouter>
@@ -32,6 +37,7 @@ function App() {
           <Route path="/contacts" element={<Contact />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/cart" element={<Carts />} />
+          <Route path="/checkout" element={<Checkout cartItems={cartItems}/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
