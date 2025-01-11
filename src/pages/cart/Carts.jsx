@@ -19,7 +19,7 @@ console.log("Saved Cart from localStorage:", savedCart); // Check saved cart
 
 
   return (
-    <div className="w-full h-screen text-white xl:px-[4rem] px-[2rem] pt-[100px] mb-[30px]">
+    <div className="w-full md:h-screen h-auto text-white xl:px-[4rem] px-[2rem] pt-[100px] mb-[30px]">
       <div className="relative">
         {cartItems.map((item) => (
           <div
